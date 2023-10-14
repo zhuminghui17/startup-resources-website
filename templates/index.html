@@ -5,30 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Resources Visualization</title>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
+        /* Define any necessary styles here, such as margin, font sizes, etc. */
+        .stage-label {
+            font-size: 14px;
+            fill: #333;  /* A dark gray color */
         }
     </style>
 </head>
 <body>
     <h1>Startup Resources</h1>
-    <table id="resourcesTable">
-        <thead>
-            <!-- Column headers will be filled dynamically -->
-        </thead>
-        <tbody>
-            <!-- Data will be filled dynamically -->
-        </tbody>
-    </table>
+    
+    <!-- Visualization container -->
+    <div id="visualization"></div>
+    
+    <!-- Include D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Include main.js which contains the logic for the visualization -->
     <script src="/static/js/main.js"></script>
 
 </body>

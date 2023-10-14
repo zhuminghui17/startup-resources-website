@@ -3,10 +3,6 @@ from config import AIRTABLE_API_KEY, AIRTABLE_ENDPOINT
 import requests
 
 
-
-
-
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -34,3 +30,6 @@ def fetch_data():
             "details": response.json()  # Assuming Airtable returns JSON error details
         }
         return jsonify(error_message), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
